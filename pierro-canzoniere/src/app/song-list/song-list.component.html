@@ -1,0 +1,6 @@
+<p>Lista songs</p>
+
+<ul>
+  <li *ngFor='let song of listaSongs'>
+    {{song.title}} <button (click)='dettagli(song)'>dettagli</button> <br>
+  </li>
