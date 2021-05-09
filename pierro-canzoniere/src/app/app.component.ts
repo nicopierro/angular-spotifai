@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   title = 'pierro-canzoniere';
   obsSongs: Observable<Song[]>
   listaSongs: Song[];
+  dettagliAlbum: Song[];
 
   constructor(private http: HttpClient) { }
 
@@ -23,5 +24,6 @@ export class AppComponent implements OnInit {
 
   getSongs = (data: Song[]) => {
     this.listaSongs = data
+    this.dettagliAlbum = data
   }
 }
